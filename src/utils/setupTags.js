@@ -2,7 +2,7 @@ import React from "react"
 
 const setupTags = recipes => {
   const allTags = {}
-  recipes.forEach(recipe => {
+  recipes?.forEach(recipe => {
     recipe?.content?.tags?.forEach(tag => {
       if (allTags[tag]) {
         allTags[tag] = allTags[tag] + 1
